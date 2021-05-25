@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- integrate bootstrap and our styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .dropdown-item:hover{
+            background-color:rgb(238, 137, 137);
+            box-shadow:0 0 10px black;
+        }
+    </style>
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <a href="#" class="navbar-brand">Bootstrap | Split Drop Downs</a>
+    </nav>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-warning btn-lg dropdown-toggle" data-toggle="dropdown">Courses</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Java</a>
+                <a href="#" class="dropdown-item">Python</a>
+                <a href="#" class="dropdown-item">Android</a>
+                <a href="#" class="dropdown-item">iPhone</a>
+                <a href="#" class="dropdown-item">.NET</a>
+                <a href="#" class="dropdown-item">Data Science</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="btn-group">
+            <button class="btn btn-info">Courses</button>
+            <button class="btn btn-info" data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Java</a>
+                <a href="#" class="dropdown-item">Python</a>
+                <a href="#" class="dropdown-item">Android</a>
+                <a href="#" class="dropdown-item">iPhone</a>
+                <a href="#" class="dropdown-item">.NET</a>
+                <a href="#" class="dropdown-item">Data Science</a>
+            </div>
+        </div>
+    </div>
+    <!-- integrate external java scripts -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

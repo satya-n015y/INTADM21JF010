@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- integrate bootstrap and our styles-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .btn-primary{
+            background-color:teal;
+        }
+    </style>
+    <title>Bootstrap Basics</title>
+</head>
+
+<body>
+    <div id="header">
+        <h2>01.Bootstrap | Basics</h2>
+    </div>
+    <div class="container">
+        <h1>Welcome to Bootstrap</h1>
+    </div>
+    <!-- integrating bootstrap alerts-->
+    <div class="container">
+        <div class="alert alert-primary">
+            A simple primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary">
+            A simple secondary alert—check it out!
+        </div>
+        <div class="alert alert-success">
+            A simple success alert—check it out!
+        </div>
+    </div>
+
+    <!-- integrating bootstrap buttons -->
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <!-- integrating bootstrap jumbotrons-->
+    <div class="container mt-5">
+        <div class="jumbotron bg-warning">
+            <h1 class="display-4">Bootstrap @ Academy</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+    </div>
+    
+    <!-- integrate external java scripts -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
