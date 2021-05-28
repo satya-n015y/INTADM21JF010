@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- integrate bootstrap and our styles-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Extra small devices (portrait phones, less than 576px)*/
+
+        /*--- Small devices (landscape phones, 576px and up) ---*/
+        @media (min-width: 576px) {
+          body{
+              background-color:darkred;
+          }      
+        }
+
+        /*--- Medium devices (tablets, 768px and up) ---*/
+        @media (min-width: 768px) {
+            body{
+              background-color:aquamarine;
+          }             
+        }
+
+        /*--- Large devices (laptops/desktops, 992px and up) ---*/
+        @media (min-width: 992px) {
+            body{
+              background-color:cadetblue;
+          }             
+        }
+
+        /*--- Extra large devices (large desktops, 1200px and up) ---*/
+        @media (min-width: 1200px) {
+            body{
+              background-color:orangered;
+          }             
+        }
+    </style>
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Bootstrap | Responsive Breakpoints </a>
+    </nav>
+    <div class="container text-center">
+        <h2 id="screen_size" class="mt-5 font-weight-bold text-dark">Screen Width: ???</h2>
+    </div>
+
+    <!-- integrate external java scripts -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        window.addEventListener('resize', function(){
+            let width = window.innerWidth;
+            document.querySelector('#screen_size').innerHTML = `Screen Width = ${width}px`
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- integrate bootstrap and our styles-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <a href="#" class="navbar-brand">Bootstrap | Input Gropus</a>
+    </nav>
+    <div class="container">
+        <!-- prepend-->
+        <div class="input-group w-25 mb-5">
+            <div class="input-group-prepend">
+                <span class="input-group-text bg-warning">
+                    <i class="material-icons">account_circle</i>
+                </span>
+            </div>
+            <input type="text" class="form-control" placeholder="User Name">
+        </div>
+
+        <!-- append -->
+        <div class="input-group w-50 mb-5">
+            <input type="email" class="form-control" placeholder="user name">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    @cognizant.com
+                </span>
+            </div>
+        </div>
+
+        <!-- prepend & append -->
+        <div class="input-group mb-3 w-50">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- integrate external java scripts -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
